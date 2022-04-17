@@ -1,0 +1,10 @@
+github.com/cobratbq/goutils v0.0.0-20220527214328-ac007d319d8c h1:cT2CPOGd9/HB66haiotp9crTMspQh5TMlpPMFN4boPM=
+github.com/cobratbq/goutils v0.0.0-20220527214328-ac007d319d8c/go.mod h1:mez72GoFhK6yia9KYon4XjM2HEmFG8ieK9ipzY2oVI0=
+github.com/cobratbq/goutils v0.0.0-20220527231830-1c0e41163533 h1:7cDdrtzCR0oH47Z6kmedKxd10vf9neZhsW9eMpE0QGU=
+github.com/cobratbq/goutils v0.0.0-20220527231830-1c0e41163533/go.mod h1:mez72GoFhK6yia9KYon4XjM2HEmFG8ieK9ipzY2oVI0=
+github.com/cobratbq/goutils v0.0.0-20220528212404-d237a692e939 h1:c0sDQcnyoBtnPRS8IFfI6pUYN7CJGUrLUQvXh1HmZ/w=
+github.com/cobratbq/goutils v0.0.0-20220528212404-d237a692e939/go.mod h1:mez72GoFhK6yia9KYon4XjM2HEmFG8ieK9ipzY2oVI0=
+github.com/cobratbq/goutils v0.0.0-20220528214409-431d234a0d96 h1:P0Ry6eQrHvpGN7gc3UxpiqESQXE6E6KOcm2SlYg7aQ4=
+github.com/cobratbq/goutils v0.0.0-20220528214409-431d234a0d96/go.mod h1:mez72GoFhK6yia9KYon4XjM2HEmFG8ieK9ipzY2oVI0=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
