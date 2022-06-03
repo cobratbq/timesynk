@@ -5,7 +5,7 @@ import (
 	"flag"
 	"time"
 
-	osutils "github.com/cobratbq/goutils/std/os"
+	os_ "github.com/cobratbq/goutils/std/os"
 	"github.com/cobratbq/httptime/internal/timefile"
 )
 
@@ -15,7 +15,7 @@ func cmdSnapshot(args []string) {
 	config := checkpointOptions{}
 	configureCheckpoint(args)
 	if err := snapshotCheckpoint(config.checkpointPath); err != nil {
-		osutils.ExitWithError(1, "Failed to update mod-time: "+err.Error()+"\n")
+		os_.ExitWithError(1, "Failed to update mod-time: "+err.Error()+"\n")
 	}
 }
 

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	assert "github.com/cobratbq/goutils/assert"
-	osutils "github.com/cobratbq/goutils/std/os"
+	os_ "github.com/cobratbq/goutils/std/os"
 	"github.com/cobratbq/httptime/internal/timefile"
 	"github.com/cobratbq/httptime/internal/timesync"
 )
@@ -21,19 +21,19 @@ func cmdSync(handle TimeProcessor, args []string) {
 	if cfg.checkpointSync {
 		timestamp, err := timefile.ReadTime(cfg.checkpointPath)
 		if err != nil {
-			osutils.ExitWithError(1, "Failed to sync with checkpoint file: "+err.Error())
+			os_.ExitWithError(1, "Failed to sync with checkpoint file: "+err.Error())
 		}
 		if err = handle(timestamp); err != nil {
-			osutils.ExitWithError(1, "Failed to process time from checkpoint file: "+err.Error())
+			os_.ExitWithError(1, "Failed to process time from checkpoint file: "+err.Error())
 		}
 	}
 	if cfg.webSync {
 		synctime, err := timesync.SyncHttpsTime(cfg.httpURL, cfg.httpsURL)
 		if err != nil {
-			osutils.ExitWithError(1, "Failed to query timestamp from HTTPS server: "+err.Error())
+			os_.ExitWithError(1, "Failed to query timestamp from HTTPS server: "+err.Error())
 		}
 		if err := handle(synctime.Remote.Add(time.Since(synctime.Local))); err != nil {
-			osutils.ExitWithError(1, "Failed to process time from synchronization: "+err.Error())
+			os_.ExitWithError(1, "Failed to process time from synchronization: "+err.Error())
 		}
 	}
 }

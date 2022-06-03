@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	osutils "github.com/cobratbq/goutils/std/os"
+	os_ "github.com/cobratbq/goutils/std/os"
 )
 
 const HWCLOCK_FORMAT = "2006-01-02 15:04:05.999999-07:00"
@@ -22,13 +22,13 @@ func main() {
 	switch cmd {
 	case "":
 		flag.CommandLine.Usage()
-		osutils.ExitWithError(1, "\nSpecify command for operation to perform.")
+		os_.ExitWithError(1, "\nSpecify command for operation to perform.")
 	case "checkpoint":
 		cmdSnapshot(flag.Args()[1:])
 	case "sync":
 		cmdSync(processor, flag.Args()[1:])
 	default:
-		osutils.ExitWithError(1, "Unknown command specified: "+cmd)
+		os_.ExitWithError(1, "Unknown command specified: "+cmd)
 	}
 }
 
