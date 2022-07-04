@@ -8,5 +8,7 @@ github.com/cobratbq/goutils v0.0.0-20220528214409-431d234a0d96 h1:P0Ry6eQrHvpGN7
 github.com/cobratbq/goutils v0.0.0-20220528214409-431d234a0d96/go.mod h1:mez72GoFhK6yia9KYon4XjM2HEmFG8ieK9ipzY2oVI0=
 github.com/cobratbq/goutils v0.0.0-20220603194341-36297571fc01 h1:bHAJXa03oKT9QQRFFYG9nvlwezk26ndnq6RmTWZPWW8=
 github.com/cobratbq/goutils v0.0.0-20220603194341-36297571fc01/go.mod h1:mez72GoFhK6yia9KYon4XjM2HEmFG8ieK9ipzY2oVI0=
+github.com/cobratbq/goutils v0.0.0-20220704232102-b427fa3c5866 h1:1Q1wxBVrMptzhNgb3oCDaVgW0iVtVUhQqiQ3S/aK8RQ=
+github.com/cobratbq/goutils v0.0.0-20220704232102-b427fa3c5866/go.mod h1:GZcu4UO0GCbLqLPUotoNSuyNzCloHWa8/zTiktHSOrc=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

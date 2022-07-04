@@ -2,13 +2,13 @@
 package main
 
 import (
-	"errors"
 	"flag"
 	"log"
 	"os"
 	"syscall"
 	"time"
 
+	"github.com/cobratbq/goutils/std/errors"
 	os_ "github.com/cobratbq/goutils/std/os"
 )
 
@@ -107,4 +107,4 @@ func handleSetHardwareClock(value time.Time) error {
 }
 
 // ErrNoProcessors indicates that there are no time processors configured.
-var ErrNoProcessors = errors.New("no processors configured")
+const ErrNoProcessors errors.StringError = "no processors configured"
